@@ -6,11 +6,12 @@
 	<parent>
 		<groupId>com.ants</groupId>
 		<artifactId>ants-parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.0.0</version>
+		<relativePath>../../pom.xml</relativePath>
 	</parent>
 	<artifactId>ants-common</artifactId>
 	<name>ants-common</name>
-	<url>http://maven.apache.org</url>
+	<url>http://smatiger.com</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
