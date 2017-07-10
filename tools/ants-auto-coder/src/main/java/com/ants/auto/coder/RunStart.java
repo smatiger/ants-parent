@@ -13,8 +13,14 @@ import com.ants.auto.coder.helper.CoderConfigHelper;
 public class RunStart {
 
     public static void main(String[] args) {
+        start();
+    }
+
+    private static void start() {
+        // 读取配置文件
         CoderConfig coderConfig = CoderConfigHelper
             .readConfig(AutoConfigConstants.CODER_CONFIG_PATH);
         System.out.println(JSON.toJSONString(coderConfig));
+
     }
 }

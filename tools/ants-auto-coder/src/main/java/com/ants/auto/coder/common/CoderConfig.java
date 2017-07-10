@@ -7,4 +7,15 @@ package com.ants.auto.coder.common;
 */
 public class CoderConfig {
 
+    /** 数据库配置 */
+    private DatabaseConfig databaseConfig;
+
+    public DatabaseConfig getDatabaseConfig() {
+        return databaseConfig;
+    }
+
+    public void setDatabaseConfig(DatabaseConfig databaseConfig) {
+        this.databaseConfig = databaseConfig;
+    }
+
 }

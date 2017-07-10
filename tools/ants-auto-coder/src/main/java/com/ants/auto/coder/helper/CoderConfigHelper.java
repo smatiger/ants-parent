@@ -1,5 +1,8 @@
 package com.ants.auto.coder.helper;
 
+import org.apache.commons.lang.StringUtils;
+import org.yaml.snakeyaml.Yaml;
+
 import com.ants.auto.coder.common.CoderConfig;
 
 /**
@@ -17,8 +20,13 @@ public class CoderConfigHelper {
     * @throws
     */
     public static CoderConfig readConfig(String coderConfigPath) {
-        // TODO Auto-generated method stub
-        return null;
+        String yamlPath = FileHelper.getClassPath() + coderConfigPath;
+        String yamlString = FileHelper.readFileToString(yamlPath);
+        if (StringUtils.isBlank(yamlString)) {
+            throw new RuntimeException("yaml file [" + yamlPath + "] content is empty!");
+        }
+        CoderConfig coderConfig = new Yaml().loadAs(yamlString, CoderConfig.class);
+        return coderConfig;
     }
 
 }

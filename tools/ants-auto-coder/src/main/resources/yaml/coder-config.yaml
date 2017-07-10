@@ -1,0 +1,12 @@
+#数据库操作层代码自动生成配置
+
+databaseConfig:
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/oms
+  userName: root
+  password: root
+  policy:
+    type: asign
+    tables:
+      - user
+      - dept
