@@ -3,35 +3,65 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.ants</groupId>
-		<artifactId>ants-parent</artifactId>
-		<version>1.0.0</version>
-		<relativePath>../../pom.xml</relativePath>
-	</parent>
+	<groupId>com.ants</groupId>
 	<artifactId>ants-auto-coder</artifactId>
+	<version>1.0.0</version>
 	<name>ants-auto-coder</name>
-	<packaging>jar</packaging>
 	<url>http://smatiger.com</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<fastjson.version>1.2.31</fastjson.version>
+		<snakeyaml.version>1.18</snakeyaml.version>
+		<commons-io.version>2.5</commons-io.version>
+		<commons-lang.version>2.6</commons-lang.version>
 	</properties>
 	<dependencies>
 		<dependency>
-		    <groupId>com.alibaba</groupId>
-		    <artifactId>fastjson</artifactId>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${fastjson.version}</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.yaml</groupId>
-		    <artifactId>snakeyaml</artifactId>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>${snakeyaml.version}</version>
 		</dependency>
 		<dependency>
-		    <groupId>commons-io</groupId>
-		    <artifactId>commons-io</artifactId>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
 		</dependency>
 		<dependency>
-		    <groupId>commons-lang</groupId>
-		    <artifactId>commons-lang</artifactId>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>${commons-lang.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.23</version>
+		</dependency>
+
+		<!-- log -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>18.0</version>
 		</dependency>
 	</dependencies>
 </project>

@@ -159,7 +159,6 @@
 		<module>tools/ants-deploy</module>
 		<module>tools/ants-common</module>
 	    <module>tools/ants-starter-dubbo</module>
-	    <module>tools/ants-auto-coder</module>
 		<module>dal/ants-dal</module>
   </modules>
 </project>
